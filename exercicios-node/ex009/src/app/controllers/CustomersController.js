@@ -9,4 +9,3 @@ class CustomersController {
   }
 }
 export default new CustomersController();
-

@@ -5,13 +5,14 @@
   "main": "src/server.js",
   "license": "MIT",
   "scripts": {
-  "server": "node --experimental-specifier-resolution=node .",
-  "start": "yarn server",
-  "dev": "nodemon",
-  "lint": "eslint .",
-  "lint:fix": "eslint --fix src --ext .js",
-  "migrate": "sequelize db:migrate"
-},
+    "server": "node --experimental-specifier-resolution=node src/server.js",
+    "start": "yarn server",
+    "dev": "nodemon --watch src --ext js,json src/server.js",
+    "playground": "nodemon --watch src --ext js,json src/playground.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix src --ext .js",
+    "migrate": "sequelize db:migrate"
+  },
   "dependencies": {
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
